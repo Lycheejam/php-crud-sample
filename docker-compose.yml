@@ -12,3 +12,15 @@ services:
     volumes:
       - ./src/:/var/phpapp/
       - ./docker-configs/php-fpm/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: ${DATABASE}
+      MYSQL_USER: ${USERNAME}
+      MYSQL_PASSWORD: ${USERPASS}
+      MYSQL_ROOT_PASSWORD: ${ROOTPASS}
+    ports:
+      - "33306:3306"
+    volumes:
+      - ./docker-configs/mysql/sql:/docker-entrypoint-initdb.d
+      - ./docker-configs/mysql/data:/var/lib/mysql
