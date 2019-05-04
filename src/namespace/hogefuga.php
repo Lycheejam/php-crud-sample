@@ -2,7 +2,7 @@
   require_once "hoge.php";
   require_once "fuga.php";
 
-  echo '/namespace/index.phpです。\n';
+  echo '/namespace/hogefuga.phpです。<br>';
 
   $hoge = new HogeClass();
   $hoge->HogeHoge();
