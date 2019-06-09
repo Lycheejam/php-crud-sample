@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  <script src="../static/js/string_length.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>文字数カウントテスト</h1>
+  <form action="">
+    <div>
+      <p>テキストボックス1</p>
+      <input type="text" name="text1" id="text1" onkeyup="StringCount('text1', 'textcount1')">
+      <p><span id="textcount1">0</span>文字</p>
+    </div>
+    <div>
+      <p>テキストボックス2</p>
+      <input type="text" name="text2" id="text2" onkeyup="StringCount('text2', 'textcount2')">
+      <p><span id="textcount2">0</span>文字</p>
+    </div>
+    <div>
+      <p>テキストボックス3</p>
+      <input type="text" name="text3" id="text3" onkeyup="StringCount('text3', 'textcount3')">
+      <p><span id="textcount3">0</span>文字</p>
+    </div>
+    <div>
+      <p>テキストボックス4</p>
+      <input type="text" name="text4" id="text4" onkeyup="StringCount('text4', 'textcount4')">
+      <p><span id="textcount4">0</span>文字</p>
+    </div>
+  </form>
+</body>
+</html>
