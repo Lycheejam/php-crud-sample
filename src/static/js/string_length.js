@@ -12,6 +12,13 @@ Utils.StringCount = function(countTarget, resultTarget) {
   document.getElementById(resultTarget).innerText = len;
 }
 
+/**
+ * 文字列カウンター
+ * 最大文字数を指定すると指定文字数以上はマイナスカウントとなる。
+ * @param {string} countTarget カウント対象のinput要素ID名
+ * @param {string} resultTarget 文字列カウント結果の挿入先ID名
+ * @param {string} maxCount 最大文字数（任意）
+ */
 Utils.StringCountEx = function(countTarget, resultTarget, maxCount = 0) {
   let text = document.getElementById(countTarget);
   let result = document.getElementById(resultTarget);
